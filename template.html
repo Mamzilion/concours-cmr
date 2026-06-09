@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle de Page - Concours Cameroon 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cmGreen: '#007A5E',
+                        cmRed: '#CE1126',
+                        cmYellow: '#FCD116',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-height-screen flex flex-col">
+
+    <header class="bg-cmGreen text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="../index.html" class="text-xl font-bold flex items-center gap-2 hover:opacity-90 transition">
+                <span class="text-cmYellow text-2xl">★</span> Concours<span class="text-cmYellow">CMR</span>
+            </a>
+            
+            <nav class="flex items-center space-x-6">
+                <a href="../index.html" class="text-sm font-medium hover:text-cmYellow transition">Accueil</a>
+                <a href="https://wa.me/2376XXXXXXXXX?text=Bonjour,%20j%27ai%20besoin%20d%27aide%20sur%20la%20plateforme." 
+                   target="_blank" 
+                   class="bg-cmRed text-white text-xs px-4 py-2 rounded-full font-bold shadow hover:bg-red-700 transition">
+                   Besoin d'aide ?
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <div class="bg-yellow-50 border-b border-cmYellow/30 py-2 text-center text-xs font-semibold text-amber-800">
+            🇨🇲 Plateforme Indépendante d'Orientation - Session 2026
+        </div>
+
+        <div class="container mx-auto py-12 px-4 text-center">
+            <h2 class="text-2xl font-bold text-gray-400">Page Modèle (Contenu à insérer ici)</h2>
+            <p class="text-gray-400 text-sm mt-2">Copiez ce fichier pour créer les pages spécifiques (enam.html, enspy.html, etc.)</p>
+        </div>
+        </main>
+
+    <footer class="bg-gray-950 text-gray-400 py-8 border-t-4 border-cmRed">
+        <div class="container mx-auto px-4 text-center space-y-4">
+            <p class="text-sm font-semibold text-white">&copy; 2026 ConcoursCMR. Tous droits réservés.</p>
+            <p class="max-w-md mx-auto text-xs text-gray-500">
+                Cette plateforme fournit les arrêtés officiels à titre gratuit pour faciliter l'accès à l'information. Nos services d'accompagnement, d'épreuves et de coaching sont indépendants des administrations ministérielles.
+            </p>
+            <div class="pt-2 text-xs flex justify-center gap-4 border-t border-gray-900 text-gray-600">
+                <span>Yaoundé, Cameroun</span>
+                <span>•</span>
+                <a href="https://wa.me/2376XXXXXXXXX" class="hover:underline text-cmYellow">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

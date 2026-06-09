@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concours Cameroun 2026 | Orientation & Succès</title>
+    <title>Concours Cameroun 2026 | Orientation & Success</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,105 +19,220 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
 
     <header class="bg-cmGreen text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-xl font-bold flex items-center gap-2">
-                <span class="text-cmYellow">★</span> Concours<span class="text-cmYellow">CMR</span>
-            </h1>
-            <nav class="space-x-4">
-                <a href="https://drive.google.com/drive/folders/1-DQPdKyY_kb8VVoz3O3vs55KLPXYp96s?usp=sharing" class="hover:text-cmYellow transition">Arrêtés</a>
-                <a href="#services" class="hover:text-cmYellow transition">Nos Services</a>
-                <a href="https://wa.me/2376XXXXXXXX" class="bg-cmRed text-white px-4 py-2 rounded-full font-semibold hover:bg-red-700 transition">Nous Contacter</a>
+            <a href="index.html" class="text-xl font-bold flex items-center gap-2">
+                <span class="text-cmYellow text-2xl">★</span> Concours<span class="text-cmYellow">CMR</span>
+            </a>
+            <nav class="flex items-center space-x-6">
+                <a href="index.html" class="text-sm font-medium text-cmYellow">Accueil</a>
+                <a href="https://wa.me/2376XXXXXXXXX?text=Bonjour,%20j%27ai%20besoin%20d%27aide%20sur%20la%20plateforme." 
+                   target="_blank" 
+                   class="bg-cmRed text-white text-xs px-4 py-2 rounded-full font-bold shadow hover:bg-red-700 transition">
+                   Besoin d'aide ?
+                </a>
             </nav>
         </div>
     </header>
 
-    <section class="bg-gradient-to-r from-cmGreen to-green-800 text-white py-20 px-4 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Tous les Concours du Cameroun 2026 en un seul endroit</h2>
-        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-200">Téléchargez les arrêtés officiels, accédez aux anciennes épreuves et bénéficiez d'un accompagnement personnalisé pour réussir.</p>
-        <a href="https://drive.google.com/drive/folders/1-DQPdKyY_kb8VVoz3O3vs55KLPXYp96s?usp=sharing" class="bg-cmYellow text-cmGreen font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-400 transition transform hover:scale-105 inline-block">Voir les Arrêtés Disponibles</a>
-    </section>
-
-    <section id="arretes" class="container mx-auto py-16 px-4">
-        <h3 class="text-3xl font-bold text-center mb-12 border-b-4 border-cmYellow w-max mx-auto pb-2">Derniers Arrêtés Lancés</h3>
+    <main class="flex-grow">
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-cmGreen">
-                <div class="p-6">
-                    <span class="bg-green-100 text-cmGreen text-xs font-bold px-2.5 py-0.5 rounded">Nouveau</span>
-                    <h4 class="text-xl font-bold mt-2 mb-2">ENSPY 2026 (Polytech Yaoundé)</h4>
-                    <p class="text-gray-600 text-sm mb-4">Date limite de dépôt : En attente des détails officiels.</p>
-                    <a href="https://drive.google.com/drive/folders/1-DQPdKyY_kb8VVoz3O3vs55KLPXYp96s?usp=sharing" class="block text-center bg-cmGreen text-white py-2 rounded hover:bg-green-700 transition">Télécharger l'Arrêté</a>
+        <section class="bg-gradient-to-r from-cmGreen to-emerald-800 text-white py-16 px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4 uppercase tracking-tight">
+                    Trouvez votre Concours <span class="text-cmYellow">2026</span>
+                </h2>
+                <p class="text-sm md:text-base mb-8 text-emerald-100 max-w-xl mx-auto">
+                    Arrêtés officiels gratuits, guides de constitution des dossiers, anciennes épreuves corrigées et coaching personnalisé.
+                </p>
+                
+                <div class="relative max-w-xl mx-auto shadow-2xl rounded-xl">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
+                        🔍
+                    </span>
+                    <input 
+                        type="text" 
+                        id="searchBar"
+                        placeholder="Tapez une école... (Ex: ENAM, Polytech, IUT, Minsante)" 
+                        class="w-full pl-12 pr-4 py-4 rounded-xl text-gray-900 placeholder-gray-500 font-medium focus:outline-none focus:ring-4 focus:ring-cmYellow transition bg-white"
+                    >
                 </div>
             </div>
+        </section>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-cmRed">
-                <div class="p-6">
-                    <span class="bg-red-100 text-cmRed text-xs font-bold px-2.5 py-0.5 rounded">Urgent</span>
-                    <h4 class="text-xl font-bold mt-2 mb-2">IDE / Sage-Femme 2026</h4>
-                    <p class="text-gray-600 text-sm mb-4">Concours des personnels médico-sanitaires.</p>
-                    <a href="https://drive.google.com/drive/folders/1-DQPdKyY_kb8VVoz3O3vs55KLPXYp96s?usp=sharing" class="block text-center bg-cmGreen text-white py-2 rounded hover:bg-green-700 transition">Télécharger l'Arrêté</a>
-                </div>
+        <section class="container mx-auto py-12 px-4">
+            <div class="flex items-center justify-between mb-8 border-b pb-4">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2">
+                    📂 Écoles & Institutions Disponibles
+                </h3>
+                <span id="counter" class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full font-bold">12 Écoles</span>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-cmYellow">
-                <div class="p-6">
-                    <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2.5 py-0.5 rounded">Populaire</span>
-                    <h4 class="text-xl font-bold mt-2 mb-2">ENS / ENSET 2026</h4>
-                    <p class="text-gray-600 text-sm mb-4">Préparations aux vagues d'enseignements.</p>
-                    <a href="https://drive.google.com/drive/folders/1-DQPdKyY_kb8VVoz3O3vs55KLPXYp96s?usp=sharing" class="block text-center bg-cmGreen text-white py-2 rounded hover:bg-green-700 transition">Télécharger l'Arrêté</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="schoolsGrid">
+                
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="douane">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">👮‍♂️</div>
+                        <h4 class="text-lg font-bold text-gray-900">DOUANE</h4>
+                        <p class="text-xs text-gray-500 mt-1">Concours des régies financières du Cameroun.</p>
+                    </div>
+                    <a href="pages/douane.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
                 </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="enam ecole nationale d'administration et de magistrature">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">⚖️</div>
+                        <h4 class="text-lg font-bold text-gray-900">ENAM</h4>
+                        <p class="text-xs text-gray-500 mt-1">Administration générale, Régies financières, Magistrature.</p>
+                    </div>
+                    <a href="pages/enam.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="enspd polytechnique douala ingenieur">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">⚙️</div>
+                        <h4 class="text-lg font-bold text-gray-900">ENSPD (Polytech Dla)</h4>
+                        <p class="text-xs text-gray-500 mt-1">École Nationale Supérieure Polytechnique de Douala.</p>
+                    </div>
+                    <a href="pages/enspd.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="enspy polytechnique yaounde ingenieur">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">💻</div>
+                        <h4 class="text-lg font-bold text-gray-900">ENSPY (Polytech Yde)</h4>
+                        <p class="text-xs text-gray-500 mt-1">École Nationale Supérieure Polytechnique de Yaoundé.</p>
+                    </div>
+                    <a href="pages/enspy.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="essec commerce gestion economie douala">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">📈</div>
+                        <h4 class="text-lg font-bold text-gray-900">ESSEC</h4>
+                        <p class="text-xs text-gray-500 mt-1">École Supérieure des Sciences Économiques et Commerciales.</p>
+                    </div>
+                    <a href="pages/essec.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="iba beaux arts nkongsamba art">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">🎨</div>
+                        <h4 class="text-lg font-bold text-gray-900">IBA (Beaux-Arts)</h4>
+                        <p class="text-xs text-gray-500 mt-1">Institut des Beaux-Arts de Nkongsamba.</p>
+                    </div>
+                    <a href="pages/iba.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="ibai">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">🏛️</div>
+                        <h4 class="text-lg font-bold text-gray-900">IBAI</h4>
+                        <p class="text-xs text-gray-500 mt-1">Institut Universitaire technologique / Spécifique.</p>
+                    </div>
+                    <a href="pages/ibai.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="iut de bandjoun ouest technologie">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">🛠️</div>
+                        <h4 class="text-lg font-bold text-gray-900">IUT Bandjoun</h4>
+                        <p class="text-xs text-gray-500 mt-1">Institut Universitaire de Technologie de Bandjoun.</p>
+                    </div>
+                    <a href="pages/iut-bandjoun.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="iut de dla douala technologie">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">🧬</div>
+                        <h4 class="text-lg font-bold text-gray-900">IUT Douala</h4>
+                        <p class="text-xs text-gray-500 mt-1">Institut Universitaire de Technologie de Douala.</p>
+                    </div>
+                    <a href="pages/iut-douala.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="iut de ndere ngaoundere technologie informatique reseau">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">📡</div>
+                        <h4 class="text-lg font-bold text-gray-900">IUT Ngaoundéré</h4>
+                        <p class="text-xs text-gray-500 mt-1">Institut Universitaire de Technologie de Ngaoundéré.</p>
+                    </div>
+                    <a href="pages/iut-ngaoundere.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="minfopra fonction publique administratifs ministere">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">💼</div>
+                        <h4 class="text-lg font-bold text-gray-900">MINFOPRA</h4>
+                        <p class="text-xs text-gray-500 mt-1">Concours directs de la Fonction Publique.</p>
+                    </div>
+                    <a href="pages/minfopra.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+                <div class="school-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cmGreen/30 transition flex flex-col justify-between" data-name="minsante medecine ide sante infirme sage femme">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-xl mb-4">🩺</div>
+                        <h4 class="text-lg font-bold text-gray-900">MINSANTÉ</h4>
+                        <p class="text-xs text-gray-500 mt-1">Personnels Médico-Sanitaires, IDE, Sages-femmes.</p>
+                    </div>
+                    <a href="pages/minsante.html" class="block text-center mt-6 text-sm font-bold text-cmGreen bg-emerald-50 py-2.5 rounded-lg hover:bg-cmGreen hover:text-white transition">Ouvrir l'École</a>
+                </div>
+
+            </div>
+
+            <div id="noResult" class="hidden text-center py-12 text-gray-400 font-medium">
+                ❌ Aucune école ne correspond à votre recherche.
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-400 py-8 border-t-4 border-cmRed">
+        <div class="container mx-auto px-4 text-center space-y-4">
+            <p class="text-sm font-semibold text-white">&copy; 2026 ConcoursCMR. Tous droits réservés.</p>
+            <p class="max-w-md mx-auto text-xs text-gray-500">
+                Cette plateforme fournit les arrêtés officiels à titre gratuit pour faciliter l'accès à l'information. Nos services d'accompagnement, d'épreuves et de coaching sont indépendants des administrations ministérielles.
+            </p>
+            <div class="pt-2 text-xs flex justify-center gap-4 border-t border-gray-900 text-gray-600">
+                <span>Yaoundé, Cameroun</span>
+                <span>•</span>
+                <a href="https://wa.me/2376XXXXXXXXX" class="hover:underline text-cmYellow">Contact Support</a>
             </div>
         </div>
-    </section>
-
-    <section id="services" class="bg-gray-100 py-16 px-4">
-        <div class="container mx-auto">
-            <h3 class="text-3xl font-bold text-center mb-12 border-b-4 border-cmRed w-max mx-auto pb-2">Nos Offres de Services</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow text-center flex flex-col justify-between">
-                    <div>
-                        <h4 class="text-2xl font-bold mb-4">Pack Épreuves Corrigées</h4>
-                        <p class="text-gray-600 mb-6">Accédez aux épreuves des 5 dernières années avec des corrections détaillées par des experts.</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-extrabold text-cmRed mb-4">2 000 FCFA</p>
-                        <a href="https://wa.me/237687363391?text=Je+veux+le+pack+epreuves" class="block w-full bg-cmRed text-white py-3 rounded font-bold hover:bg-red-700 transition">Acheter via WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow text-center flex flex-col justify-between border-2 border-cmYellow">
-                    <div>
-                        <h4 class="text-2xl font-bold mb-4">Groupe VIP & Coaching</h4>
-                        <p class="text-gray-600 mb-6">Alertes en temps réel, vérification de la conformité de vos dossiers, et astuces de révision quotidiennes.</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-extrabold text-cmGreen mb-4">5 000 FCFA <span class="text-sm font-normal text-gray-500">/ saison</span></p>
-                        <a href="https://wa.me/237687363391?text=Je+veux+rejoindre+le+groupe+VIP" class="block w-full bg-cmGreen text-white py-3 rounded font-bold hover:bg-green-700 transition">Rejoindre le Groupe</a>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow text-center flex flex-col justify-between">
-                    <div>
-                        <h4 class="text-2xl font-bold mb-4">Gestion d'Inscription</h4>
-                        <p class="text-gray-600 mb-6">Vous n'avez pas de connexion ou de machine ? Nous gérons votre inscription en ligne de A à Z sans erreur.</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-extrabold text-gray-700 mb-4">1 500 FCFA</p>
-                        <a href="https://wa.me/237687363391?text=Je+veux+de+laide+pour+mon+inscription" class="block w-full bg-gray-800 text-white py-3 rounded font-bold hover:bg-gray-900 transition">Demander l'Aide</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
-        <p>&copy; 2026 ConcoursCMR. Tous droits réservés.</p>
-        <p class="mt-2 text-xs">Plateforme indépendante d'aide à l'orientation.</p>
     </footer>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const cards = document.querySelectorAll('.school-card');
+        const noResult = document.getElementById('noResult');
+        const counter = document.getElementById('counter');
+
+        searchBar.addEventListener('input', (e) => {
+            const searchValue = e.target.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const searchKeywords = card.getAttribute('data-name');
+                if (searchKeywords.includes(searchValue)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Gérer le compteur dynamique
+            counter.textContent = visibleCount === 1 ? '1 École' : `${visibleCount} Écoles`;
+
+            // Afficher le message d'erreur si rien n'est trouvé
+            if (visibleCount === 0) {
+                noResult.classList.remove('hidden');
+            } else {
+                noResult.classList.add('hidden');
+            }
+        });
+    </script>
 
 </body>
 </html>
